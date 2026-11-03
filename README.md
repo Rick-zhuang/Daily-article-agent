@@ -61,7 +61,7 @@ cd "C:\Users\你的用户名\Documents\daily_paper_agent"
 1. 按 `Win + R`，输入 `taskschd.msc`。
 2. 选择“创建基本任务”，例如命名为 `Daily Research Paper Agent`。
 3. 触发器选择“每天”，设置期望的本地时间，例如 08:30。
-4. 操作选择“启动程序”。程序/脚本填写 `cmd.exe`。
+4. 操作选择“启动程序”。程序/脚本填写 `cmd.exe`。如果系统找不到，可以使用完整路径 `C:\Windows\System32\cmd.exe`。
 5. “添加参数”填写（需要根据你的实际目录修改）：
 
    ```text
