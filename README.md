@@ -145,6 +145,8 @@ JIF 匹配使用 `journal_metrics.json` 中的期刊名称和 `aliases` 别名�
 
 **不自动打开浏览器：** `python daily_paper_agent.py --no-open`
 
+**修改 config.json 文件** JSON 的基本语法规则中，同一个数组中的多个元素必须使用英文逗号分隔；最后一个字符串后面不能有多余逗号；字符串必须使用英文双引号 " "；如果整个 JSON 文件结束，最后一个配置项后面不能再有逗号，且需要闭合 }。修改 config.json 后，可以先用 Python 检查语法（`python -m json.tool config.json`）。如果 JSON 正确，Python 会输出格式化后的配置内容；如果有错误，会指出错误位置。
+
 ## v3.0 检索范围与报告结构
 
 检索限定在 PubMed、Nature、ACS Publications、Wiley Online Library。PubMed 通过 NCBI E-utilities 搜索并取回元数据；Nature、ACS 和 Wiley 通过 Crossref 元数据搜索候选，再严格按 DOI/落地 URL 的出版商域名筛选。Crossref 在这里是元数据索引，不作为额外的目标出版商来源。由于出版商 API、索引延迟、访问权限及元数据完整性不同，这不保证覆盖对应网站的全部文章。
