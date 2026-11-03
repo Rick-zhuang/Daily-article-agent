@@ -104,7 +104,7 @@ cd "C:\Users\你的用户名\Documents\daily_paper_agent"
 - `full_text.enabled`：是否尝试开放 PDF 分析。
 - `full_text.allowed_pdf_hosts`：开放 PDF 下载白名单。只添加你信任且允许访问的学术仓储/出版社域名；程序只允许 HTTPS，并再次检查重定向域名。
 
-如果研究方向改变，建议同时修改 `search_queries`、`arxiv_queries` 和 `keywords`，不要只改标题提示词。
+如果研究方向改变，建议同时修改 `search_queries`、`arxiv_queries` 和 `keywords`，不要只改标题提示词。增加 search_queries 会扩展主题检索；增加 keywords 主要影响后续关键词匹配或筛选，并不一定会自动增加 PubMed 的检索请求。
 
 ### 目标期刊清单示例
 
